@@ -7,7 +7,7 @@ import NewQuote from "./containers/NewQuote/NewQuote";
 import EditQuote from "./containers/EditQuote/EditQuote";
 
 const App = () => (
-    <div    className='bg-light'>
+    <div className='bg-light'>
         <header>
             <Navbar/>
         </header>
@@ -15,14 +15,14 @@ const App = () => (
             <Routes>
                 <Route path='/' element={(
                     <Home/>
-                )}/>
-                <Route path='/quotes' element={(
-                    <Home/>
-                )}/>
-                <Route path='/quotes/:id' element={(
-                <QuotesList/>
-                )}/>
-
+                )}>
+                    <Route path='/quotes' element={(
+                        <QuotesList/>
+                    )}/>
+                    <Route path='/quotes/:id' element={(
+                        <QuotesList/>
+                    )}/>
+                    </Route>
                 <Route path='/quotes/:id/edit/' element={(
                     <EditQuote />
                 )}/>
