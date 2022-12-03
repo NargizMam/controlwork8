@@ -14,7 +14,7 @@ const OneQuote: React.FC<Props> = ({quote}) => {
         navigate('/');
     }
     return (
-        <Card sx={{ width: 350, margin: 5}}>
+        <Card sx={{ width: 550, margin: 5}}>
             <CardContent>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                     {quote.category}

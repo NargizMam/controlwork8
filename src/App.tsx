@@ -7,7 +7,7 @@ import NewQuote from "./containers/NewQuote/NewQuote";
 import EditQuote from "./containers/EditQuote/EditQuote";
 
 const App = () => (
-    <>
+    <div    className='bg-light'>
         <header>
             <Navbar/>
         </header>
@@ -32,7 +32,7 @@ const App = () => (
 
             </Routes>
         </main>
-    </>
+    </div>
 );
 
 export default App;

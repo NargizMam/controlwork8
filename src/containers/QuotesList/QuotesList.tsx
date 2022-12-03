@@ -48,7 +48,10 @@ const QuotesList = () => {
 
     return (
         <>
-            All quotes
+            <h4>
+                {id ? `Все цитаты категории ${id}` : 'All QUOTES'}
+            </h4>
+
             {loading ? <Spinner/> : null}
             {oneQuote}
         </>
