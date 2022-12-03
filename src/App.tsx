@@ -19,15 +19,17 @@ const App = () => (
                 <Route path='/quotes' element={(
                     <Home/>
                 )}/>
-                <Route path='quotes/:id/edit/' element={(
+                <Route path='/quotes/:id' element={(
+                <QuotesList/>
+                )}/>
+
+                <Route path='/quotes/:id/edit/' element={(
                     <EditQuote />
                 )}/>
                 <Route path='/add-quote' element={(
                     <NewQuote/>
                 )}/>
-                <Route path='quotes/:id' element={(
-                    <QuotesList/>
-                )}/>
+
             </Routes>
         </main>
     </>

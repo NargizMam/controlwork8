@@ -36,6 +36,7 @@ const QuoteForm:React.FC<Props> = ({onCreate, quote}) => {
     const selectOption = CATEGORY.map(category => (
         <option
             key = {category.id+Math.random()}
+            value={category.id}
         >{category.title}</option>
     ));
 
@@ -50,8 +51,8 @@ const QuoteForm:React.FC<Props> = ({onCreate, quote}) => {
                         <select className='Label px-5 py-2'
                                 name="category"
                                 onChange={onQuoteChange}
-                                value={newQuote.category}
                         >
+                            <option>Выберите категорию</option>
                             {selectOption}
                         </select>
                 </label><br/>

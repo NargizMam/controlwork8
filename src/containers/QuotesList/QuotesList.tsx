@@ -17,7 +17,7 @@ const QuotesList = () => {
             let quotesResponse =await axiosApi.get<QuotesList>('/quotes.json');
             let newQuotes: Quote[] = [];
             if(id){
-                 quotesResponse =await axiosApi.get<QuotesList>(url);
+                quotesResponse =await axiosApi.get<QuotesList>(url);
 
             }
             Object.keys(quotesResponse.data).map(key => {
